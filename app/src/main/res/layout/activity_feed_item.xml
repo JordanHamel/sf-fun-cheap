@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffa7ffd6"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datelocation"
+            android:layout_marginLeft="20dp" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="August 10"
+                android:id="@+id/date"
+                android:fontFamily="sans-serif-condensed"
+                android:textAllCaps="true"
+                android:paddingTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Golden Gate Park"
+                android:id="@+id/location"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#a476747a"
+                android:textAllCaps="true"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Event title goes here"
+            android:id="@+id/eventtitle"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="30sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_below="@+id/datelocation"
+            android:layout_alignLeft="@+id/datelocation"
+            android:layout_alignStart="@+id/datelocation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="The Tony Award-winning San Francisco Mime Troupe continues its 55th season with more free, lively satire performances in park settings around the Bay Area with their 2014 production Ripple Effect..."
+            android:id="@+id/description"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/eventtitle"
+            android:layout_alignLeft="@+id/eventtitle"
+            android:layout_alignStart="@+id/eventtitle" />
+
+</RelativeLayout>
